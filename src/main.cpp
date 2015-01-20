@@ -2613,7 +2613,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "6 Jan 2015: CNN: Millions in U.S. brace for record deep freeze";
+        const char* pszTimestamp = "Winter time is good for noble people";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
         txNew.vin.resize(1);
