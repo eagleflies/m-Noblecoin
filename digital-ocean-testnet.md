@@ -1,6 +1,5 @@
 # INSTALLATION
-#### Create droplet with 2 GB of memory at digital ocean, ubuntu 14.04x64 (other providers of virtual hosts
-should also be fine however you may need to install additional packages).
+#### Create droplet with 2 GB of memory at digital ocean, ubuntu 14.04x64 (other providers of virtual hosts should also be fine however you may need to install additional packages).
 #### Connect to it.
 
 locale-gen en_US en_US.UTF-8 
