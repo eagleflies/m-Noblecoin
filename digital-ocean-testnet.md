@@ -5,7 +5,7 @@
 cd ~
 locale-gen en_US en_US.UTF-8 
 apt-get update
-apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git screen -y
+apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libgmp-dev git screen -y
 git clone https://github.com/eagleflies/m-Noblecoin
 cd m-Noblecoin/src
 make -f makefile.unix -e USE_UPNP=-
