@@ -51,7 +51,7 @@ Now you may check logs of daemon to see what it is doing. Open another screen''s
 tail -f /root/.noblecoin/testnet2/debug.log
 ```
 
-You can switch between screen's tab's using 'Ctrl+a', 'n' 
+You can switch between screen tab's using 'Ctrl+a', 'n' 
 Good luck and have fun!
 
 ## 4. UPGRADING YOUR DAEMON
