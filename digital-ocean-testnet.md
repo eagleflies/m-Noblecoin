@@ -1,15 +1,15 @@
-# INSTALLATION
+# 1. INSTALLATION OF OS
  Create droplet with 2 GB of memory at digital ocean, ubuntu 14.04x64 (other providers of virtual hosts should also be fine however you may need to install additional packages).
  Connect to it.
  
-## INSTALLATION OF SYSTEM PACKAGES
+## 2. INSTALLATION OF SYSTEM PACKAGES
 ```bash
 cd ~
 locale-gen en_US en_US.UTF-8 
 apt-get update
 apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libgmp-dev git screen -y
 ```
-## GETTING AND COMPILING THE CODE
+## 3. GETTING AND COMPILING THE CODE
 ```bash
 cd ~
 git clone https://github.com/eagleflies/m-Noblecoin
@@ -54,11 +54,20 @@ tail -f /root/.noblecoin/testnet2/debug.log
 You can switch between screen's tab's using 'Ctrl+a', 'n' 
 Good luck and have fun!
 
-## UPGRADING YOUR DAEMON
-If there were some changes you may need to upgrade the code
+## 4. UPGRADING YOUR DAEMON
+If there were some changes you may need to upgrade the daemon
 ```bash
 ./noblecoind -testnet stop
 git pull
 make -f makefile.unix -e USE_UPNP=-
 ./noblecoind -testnet -addnode=104.236.70.124
 ```
+## 4.1 UPGRADING DAEMON V.2
+If procedure above did not work 
+```bash
+cd ~
+rm -rf m-Noblecoin
+rm -rf .noblecoin
+```
+
+Proceed to section "3. GETTING AND COMPILING THE CODE"
