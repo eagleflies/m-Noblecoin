@@ -36,7 +36,7 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const int64 MIN_TX_FEE = 0.01 * COIN;
 static const int64 MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64 MAX_MONEY = 15000000000 * COIN;  //  NobleCoin: maximum of 15 billion coins
-static const double MAX_APR_PROOF_OF_STAKE = 0.075;
+static const double MAX_APR_PROOF_OF_STAKE = 0.08;
 static const double MAX_MAGI_BALANCE_in_STAKE = 0.15;		// balance/money supply, max 15%
 static const int64 MAX_MONEY_STAKE_REF = 3000000000 * COIN;	// 3 billion
 
@@ -65,7 +65,7 @@ static const int fHaveUPnP = false;
 #endif
 
 static const uint256 hashGenesisBlockOfficial("0x000004c91ca895a8c63176b1671eff34291ad671e59ae46630ffd8f985dd56cc");
-static const uint256 hashGenesisBlockTestNet ("0x000008e7fee9f9c0319383e2911153584c10619f0c7126ba91c28fbafd4bf81f");
+static const uint256 hashGenesisBlockTestNet ("0x00000f233732161451562f6873238a1ad30f1240f16ed32d2443e1009d611d66");
 
 static const int64 nMaxClockDrift = 2 * 60 * 60;        // two hours
 
