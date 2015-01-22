@@ -2,10 +2,10 @@
 #### Create droplet with 2 GB of memory at digital ocean, ubuntu 14.04x64 (other providers of virtual hosts should also be fine however you may need to install additional packages).
 #### Connect to it.
 ```bash
+cd ~
 locale-gen en_US en_US.UTF-8 
 apt-get update
 apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git screen -y
-apt-get autoremove
 git clone https://github.com/eagleflies/m-Noblecoin
 cd m-Noblecoin/src
 make -f makefile.unix -e USE_UPNP=-
@@ -21,7 +21,8 @@ vim /root/.noblecoin/noblecoin.conf
 rpcuser=noblecoinrpc
 rpcpassword=some_random_password
 ```
-### Here we start screen session. noblecoin daemon will run within this session and you can close your ssh connection. ```bash
+### Here we start screen session. noblecoin daemon will run within this session and you can close your ssh connection.
+```bash
 screen -S noble
 ./noblecoind -testnet -addnode=104.236.70.124
 ```
