@@ -46,7 +46,7 @@ unsigned int nStakeMaxAge = 60 * 60 * 24 * 30;	// stake age of full weight: 30 d
 unsigned int nStakeTargetSpacing = 120;		// 2 min PoS block spacing
 
 static const int64 nTargetTimespan = 60 * 30;	// 30 min
-static const int64 nTargetSpacingWork = 10 * nStakeTargetSpacing; // 10 min PoW block spacing
+static const int64 nTargetSpacingWork = 1 * nStakeTargetSpacing; // 2 min PoW block spacing
 
 int64 nChainStartTime = 1421539200;
 int nCoinbaseMaturity = 100;			// 100 blocks
