@@ -54,20 +54,32 @@ tail -f /root/.noblecoin/testnet2/debug.log
 You can switch between screen's tabs using 'Ctrl+a', 'n' 
 Good luck and have fun!
 
-## 4. UPGRADING YOUR DAEMON
-If there were some changes you may need to upgrade the daemon
+## 4. UPGRADING DAEMON (SOFT WAY)
+If there were some changes you may need to upgrade the daemon.
 ```bash
 ./noblecoind -testnet stop
 git pull
 make -f makefile.unix -e USE_UPNP=-
 ./noblecoind -testnet -addnode=104.236.70.124
 ```
-## 4.1 UPGRADING DAEMON V.2
-If procedure above did not work 
+## 4.1 UPGRADING DAEMON V.2 (HARD WAY)
+If procedure above did not work.
 ```bash
+./noblecoind -testnet stop
 cd ~
 rm -rf m-Noblecoin
 rm -rf .noblecoin
 ```
 
 Proceed to section "3. GETTING AND COMPILING THE CODE"
+
+## 4.2 UPGRADING DAEMON (MIDDLE WAY)
+When blockchain needs to deleted.
+```bash
+./noblecoind -testnet stop
+rm -rf ~/.noblecoin/testnet2
+cd ~/m-Noblecoin/src
+git pull
+make -f makefile.unix -e USE_UPNP=-
+./noblecoind -testnet -addnode=104.236.70.124
+```
