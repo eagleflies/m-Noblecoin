@@ -2100,8 +2100,8 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot) const
         return error("CheckBlock() : coinbase output not empty for proof-of-stake block");
 
     // Check coinbase timestamp
-    if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
-        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
+//    if (GetBlockTime() > (int64)vtx[0].nTime + nMaxClockDrift)
+//        return DoS(50, error("CheckBlock() : coinbase timestamp is too early"));
 
     // Check coinstake timestamp
     if (IsProofOfStake() && !CheckCoinStakeTimestamp(GetBlockTime(), (int64)vtx[1].nTime))
