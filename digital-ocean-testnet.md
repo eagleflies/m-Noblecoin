@@ -6,6 +6,7 @@
 ```bash
 cd ~
 locale-gen en_US en_US.UTF-8 
+export LC_ALL="en_US.UTF-8"
 apt-get update
 apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libgmp-dev git screen -y
 ```
