@@ -12,7 +12,7 @@ apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-de
 ## 3. GETTING AND COMPILING THE CODE
 ```bash
 cd ~
-git clone https://github.com/eagleflies/m-Noblecoin
+git clone https://github.com/eagleflies/noblecoin
 cd m-Noblecoin/src
 make -f makefile.unix -e USE_UPNP=-
 strip noblecoind
