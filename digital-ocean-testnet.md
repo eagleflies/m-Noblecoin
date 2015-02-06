@@ -17,7 +17,7 @@ git clone https://github.com/eagleflies/noblecoin
 cd noblecoin/src
 make -f makefile.unix -e USE_UPNP=-
 strip noblecoind
-./noblecoind -testnet -addnode=104.131.88.243
+./noblecoind -testnet -addnode=104.236.195.137
 ```
 You will get an error saying you need to create your noblecoin.conf file
 ```bash
