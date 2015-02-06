@@ -13,7 +13,7 @@ apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-de
 ```bash
 cd ~
 git clone https://github.com/eagleflies/noblecoin
-cd m-Noblecoin/src
+cd noblecoin/src
 make -f makefile.unix -e USE_UPNP=-
 strip noblecoind
 ./noblecoind -testnet -addnode=104.131.88.243
